@@ -1,8 +1,8 @@
 from Graphics import Graphics
-from GameHandling import init, start
+import GameHandling
 import time
 
-start()
+GameHandling.start()
 
 #immersion using time.sleep() and "Loading.."
 time.sleep(0.4)
@@ -13,7 +13,7 @@ Graphics.clear()
 time.sleep(0.3)
 
 #running the game
-game = init()
+game = GameHandling.init()
 game.gfx.display() #to show initial stage of roads 
 
 game.run()
